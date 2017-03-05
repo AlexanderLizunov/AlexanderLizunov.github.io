@@ -17,43 +17,80 @@
   <link rel="stylesheet" href="/assets/css/app.css">
   <body>
     <div class="wraper">
-      <div class="main__bg">
-        <video class="wraper__bg-video" src="/assets/fonts/night.mp4" width="100%" autoplay loop></video><img class="wraper__bg-image" src="/assets/img/mont.png">
-      </div>
+      <div class="main__bg" id="paralax"><img class="wraper__bg-image layer1" src="/assets/img/sky.png"><img class="wraper__bg-image layer2" src="/assets/img/par_stars_1.png"><img class="wraper__bg-image layer3" src="/assets/img/par_stars_2.png"><img class="wraper__bg-image layer4" src="/assets/img/par_stars_3.png"><img class="wraper__bg-image layer5" src="/assets/img/mont.png"><img class="wraper__bg-image layer6" src="/assets/img/par_forest.png"></div>
       <div class="content">
-        <button class="authorisation-button">Авторизоваться</button>
-        <div class="hero__container">
-          <div class="hero__container-bg">
-            <div class="C-hero__block">
-              <div class="hero__block-pic"><img class="hero__block-pic-screen" src="/assets/img/photofull.png"></div>
-              <div class="hero__block-name">Александр Лизунов</div>
-              <div class="hero__block-spec">Личный сайт веб-разработчика</div>
+        <button class="authorisation-button sign-up">Авторизоваться</button>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover')">
+          <div class="flipper">
+            <div class="authorisation-form sign-up back">
+              <div class="auth-title">Авторизируйтесь</div>
+              <form class="auth-form_block">
+                <div class="login__block" for="username">
+                  <svg class="login-ico login-icon">
+                    <use xlink:href="/assets/img/sprite.svg#login"></use>
+                  </svg>
+                  <input class="login-field" type="text" name="login" id="username" placeholder="Логин">
+                </div>
+                <div class="login__block" for="password">
+                  <svg class="login-ico login-icon">
+                    <use xlink:href="/assets/img/sprite.svg#password"></use>
+                  </svg>
+                  <input class="login-field" type="text" name="password" id="userpassword" placeholder="Пароль">
+                </div>
+                <div class="checkbox">
+                  <input id="human-check1" type="checkbox" name="check" value="check1">
+                  <label for="human-check1">Я человек</label>
+                </div>
+                <div class="radio">
+                  <div class="auth-question">Вы точно человек?</div>
+                  <input id="human-check-yes" type="radio" name="gender" value="human">
+                  <label for="human-check-yes"><span>Да</span></label>
+                  <input id="human-check-not-sure" type="radio" name="gender" value="female">
+                  <label for="human-check-not-sure"><span>Не уверен</span></label>
+                </div>
+              </form>
+              <div class="authorisation-buttons"><a class="main-page_btn btnOf" href="#">На главную</a><a class="log-in_btn" href="#">Войти</a></div>
             </div>
-            <ul class="C-socials">
-              <li class="socials__item"><a class="socials__link" href="#">
-                  <svg class="icon socials-link-ico">
-                    <use xlink:href="/assets/img/sprite.svg#vk"></use>
-                  </svg></a></li>
-              <li class="socials__item"><a class="socials__link" href="#">
-                  <svg class="icon socials-link-ico">
-                    <use xlink:href="/assets/img/sprite.svg#github"></use>
-                  </svg></a></li>
-              <li class="socials__item"><a class="socials__link" href="#">
-                  <svg class="icon socials-link-ico">
-                    <use xlink:href="/assets/img/sprite.svg#in"></use>
-                  </svg></a></li>
-            </ul>
-            <ul class="hero__container-nav">
-              <li class="hero__container-nav-item"><a class="hero__container-nav-link work" href="/works.html">Мои работы</a></li>
-              <li class="hero__container-nav-item"><a class="hero__container-nav-link about" href="/about.html">Обо мне</a></li>
-              <li class="hero__container-nav-item"><a class="hero__container-nav-link blog" href="/blog.html">Блог</a></li>
-            </ul>
+            <div class="hero__container front">
+              <div class="hero__container-bg flipper">
+                <div class="C-hero__block">
+                  <div class="hero__block-pic"><img class="hero__block-pic-screen" src="/assets/img/photofull.png"></div>
+                  <div class="hero__block-name">Александр Лизунов</div>
+                  <div class="hero__block-spec">Личный сайт веб-разработчика</div>
+                </div>
+                <ul class="C-socials">
+                  <li class="socials__item"><a class="socials__link" href="#">
+                      <svg class="icon socials-link-ico">
+                        <use xlink:href="/assets/img/sprite.svg#vk"></use>
+                      </svg></a></li>
+                  <li class="socials__item"><a class="socials__link" href="#">
+                      <svg class="icon socials-link-ico">
+                        <use xlink:href="/assets/img/sprite.svg#github"></use>
+                      </svg></a></li>
+                  <li class="socials__item"><a class="socials__link" href="#">
+                      <svg class="icon socials-link-ico">
+                        <use xlink:href="/assets/img/sprite.svg#in"></use>
+                      </svg></a></li>
+                </ul>
+                <ul class="hero__container-nav">
+                  <li class="hero__container-nav-item"><a class="hero__container-nav-link work" href="/works.html">Мои работы</a></li>
+                  <li class="hero__container-nav-item"><a class="hero__container-nav-link about" href="/about.html">Обо мне</a></li>
+                  <li class="hero__container-nav-item"><a class="hero__container-nav-link blog" href="/blog.html">Блог</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         <div class="made-by">
           <div class="made-by__name"> @Лизунов Александр</div>
           <div class="made-by__text"> при обучении в LoftSchool | 2017</div>
         </div>
+      </div>
+    </div>
+    <div class="preloader">
+      <div class="preloader__spinner">
+        <div class="preloader__animation"></div>
+        <div class="preloader__percents">0%</div>
       </div>
     </div>
   </body>
