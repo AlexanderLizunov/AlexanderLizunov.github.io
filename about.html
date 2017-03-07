@@ -15,7 +15,10 @@
   </head>
   <link rel="stylesheet" href="/assets/css/fonts.css">
   <link rel="stylesheet" href="/assets/css/about.css">
-  <body>
+  <body class="body">
+    <div class="hamburger-menu">
+      <div class="main-menu_wraper"><a href="/works.html">Мои работы</a><a href="/blog.html">Блог</a><a href="/about.html">Обо мне</a><a href="/index.html">Авторизация</a></div>
+    </div>
     <div class="wraper">
       <div class="wraper__bg"><img class="wraper__bg-image layer1" src="/assets/img/night-login.png"></div>
       <div class="header-cover">
@@ -34,9 +37,7 @@
               </svg></a></li>
         </ul>
         <button class="header__menubtn">
-          <svg class="icon socials-link-ico hamburger">
-            <use xlink:href="/assets/img/sprite.svg#hamburger"></use>
-          </svg>
+          <div class="hamburger"></div>
         </button>
       </div>
       <svg class="icon header__stars">
@@ -53,7 +54,7 @@
           <polygon class="right" points="1000,0   1000,86   500,86   500,75.5"></polygon>
         </svg>
       </div>
-      <button class="arrow-down">
+      <button class="scroll-down">
         <svg class="icon socials-link-ico arrow-down_btn ">
           <use xlink:href="/assets/img/sprite.svg#arrow_down"></use>
         </svg>

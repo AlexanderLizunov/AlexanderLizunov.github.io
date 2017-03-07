@@ -15,11 +15,12 @@
   </head>
   <link rel="stylesheet" href="/assets/css/fonts.css">
   <link rel="stylesheet" href="/assets/css/blog.css">
-  <body>
+  <body class="body">
+    <div class="hamburger-menu">
+      <div class="main-menu_wraper"><a href="/works.html">Мои работы</a><a href="/blog.html">Блог</a><a href="/about.html">Обо мне</a><a href="/index.html">Авторизация</a></div>
+    </div>
     <div class="wraper">
-      <div class="wraper__bg">
-        <video class="wraper__bg-video" src="/assets/fonts/night.mp4" width="100%" autoplay loop></video><img class="wraper__bg-image" src="/assets/img/mont.png">
-      </div>
+      <div class="wraper__bg"><img class="wraper__bg-image layer1" src="/assets/img/night-login.png"></div>
       <div class="header-cover">
         <ul class="header-socials C-socials">
           <li class="socials__item"><a class="socials__link" href="#">
@@ -36,9 +37,7 @@
               </svg></a></li>
         </ul>
         <button class="header__menubtn">
-          <svg class="icon socials-link-ico hamburger">
-            <use xlink:href="/assets/img/sprite.svg#hamburger"></use>
-          </svg>
+          <div class="hamburger"></div>
         </button>
       </div>
       <svg class="icon header__stars">
