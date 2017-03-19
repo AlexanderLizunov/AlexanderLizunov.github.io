@@ -29,13 +29,18 @@
                   <svg class="login-ico login-icon">
                     <use xlink:href="/assets/img/sprite.svg#login"></use>
                   </svg>
-                  <input class="login-field" type="text" name="login" id="username" placeholder="Логин">
+                  <input class="login-field" type="text" name="login" id="user-name" placeholder="Логин">
                 </div>
                 <div class="login__block" for="password">
                   <svg class="login-ico login-icon">
                     <use xlink:href="/assets/img/sprite.svg#password"></use>
                   </svg>
-                  <input class="login-field" type="text" name="password" id="userpassword" placeholder="Пароль">
+                  <input class="login-field" type="text" name="password" id="user-password" placeholder="Пароль">
+                  <div class="error-block">
+                    <div class="input-error__msg">Вы не ввели логин</div>
+                    <div class="input-error__msg">Вы не ввели пароль</div>
+                    <div class="input-error__msg">Вы не ввели логин и пароль</div>
+                  </div>
                 </div>
                 <div class="checkbox">
                   <input id="human-check1" type="checkbox" name="check" value="check1">
@@ -48,9 +53,8 @@
                   <input id="human-check-not-sure" type="radio" name="gender" value="female">
                   <label for="human-check-not-sure"><span>Не уверен</span></label>
                 </div>
-                <div class="input-error__msg"></div>
               </form>
-              <div class="authorisation-buttons"><a class="main-page_btn btnOf" href="#">На главную</a><a class="log-in_btn" href="#">Войти</a></div>
+              <div class="authorisation-buttons"><a class="main-page_btn btnOf" href="#">На главную</a><a class="log-in_btn" id="form-enter" href="#">Войти</a></div>
             </div>
             <div class="hero__container front">
               <div class="hero__container-bg flipper">
