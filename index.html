@@ -1,102 +1,128 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <title>Home page</title>
+    <title></title>
     <meta content="" name="author">
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="/assets/css/foundation.css">
-    <script src="/assets/js/foundation.js" defer></script>
-    <script src="/assets/js/app.js" defer></script><!--[if lt IE 9]>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
-  </head>
-  <link rel="stylesheet" href="/assets/css/fonts.css">
-  <link rel="stylesheet" href="/assets/css/app.css">
-  <body>
-    <div class="wraper">
-      <div class="main__bg" id="paralax"><img class="wraper__bg-image layer1" src="/assets/img/sky.png"><img class="wraper__bg-image layer2" src="/assets/img/par_stars_1.png"><img class="wraper__bg-image layer3" src="/assets/img/par_stars_2.png"><img class="wraper__bg-image layer4" src="/assets/img/par_stars_3.png"><img class="wraper__bg-image layer5" src="/assets/img/mont.png"><img class="wraper__bg-image layer6" src="/assets/img/par_forest.png"></div>
-      <div class="content">
-        <button class="authorisation-button sign-up">Авторизоваться</button>
-        <div class="flip-container" ontouchstart="this.classList.toggle('hover')">
-          <div class="flipper">
-            <div class="authorisation-form sign-up back">
-              <div class="auth-title">Авторизируйтесь</div>
-              <form class="auth-form_block">
-                <div class="login__block" for="username">
-                  <svg class="login-ico login-icon">
-                    <use xlink:href="/assets/img/sprite.svg#login"></use>
-                  </svg>
-                  <input class="login-field" type="text" name="login" id="user-name" placeholder="Логин">
-                </div>
-                <div class="login__block" for="password">
-                  <svg class="login-ico login-icon">
-                    <use xlink:href="/assets/img/sprite.svg#password"></use>
-                  </svg>
-                  <input class="login-field" type="text" name="password" id="user-password" placeholder="Пароль">
-                  <div class="error-block">
-                    <div class="input-error__msg">Вы не ввели логин</div>
-                    <div class="input-error__msg">Вы не ввели пароль</div>
-                    <div class="input-error__msg">Вы не ввели логин и пароль</div>
-                  </div>
-                </div>
-                <div class="checkbox">
-                  <input id="human-check1" type="checkbox" name="check" value="check1">
-                  <label for="human-check1">Я человек</label>
-                </div>
-                <div class="radio">
-                  <div class="auth-question">Вы точно человек?</div>
-                  <input id="human-check-yes" type="radio" name="gender" value="human">
-                  <label for="human-check-yes"><span>Да</span></label>
-                  <input id="human-check-not-sure" type="radio" name="gender" value="female">
-                  <label for="human-check-not-sure"><span>Не уверен</span></label>
-                </div>
-              </form>
-              <div class="authorisation-buttons"><a class="main-page_btn btnOf" href="#">На главную</a><a class="log-in_btn" id="form-enter" href="#">Войти</a></div>
-            </div>
-            <div class="hero__container front">
-              <div class="hero__container-bg flipper">
-                <div class="C-hero__block">
-                  <div class="hero__block-pic"><img class="hero__block-pic-screen" src="/assets/img/alex.jpg"></div>
-                  <div class="hero__block-name">Александр Лизунов</div>
-                  <div class="hero__block-spec">Личный сайт веб-разработчика</div>
-                </div>
-                <ul class="C-socials">
-                  <li class="socials__item"><a class="socials__link" href="#">
-                      <svg class="icon socials-link-ico">
-                        <use xlink:href="/assets/img/sprite.svg#vk"></use>
-                      </svg></a></li>
-                  <li class="socials__item"><a class="socials__link" href="#">
-                      <svg class="icon socials-link-ico">
-                        <use xlink:href="/assets/img/sprite.svg#github"></use>
-                      </svg></a></li>
-                  <li class="socials__item"><a class="socials__link" href="#">
-                      <svg class="icon socials-link-ico">
-                        <use xlink:href="/assets/img/sprite.svg#in"></use>
-                      </svg></a></li>
-                </ul>
-                <ul class="hero__container-nav">
-                  <li class="hero__container-nav-item"><a class="hero__container-nav-link work" href="/works.html">Мои работы</a></li>
-                  <li class="hero__container-nav-item"><a class="hero__container-nav-link about" href="/about.html">Обо мне</a></li>
-                  <li class="hero__container-nav-item"><a class="hero__container-nav-link blog" href="/blog.html">Блог</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+
+    <!--TODO:: change open_graph content-->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>-->
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!--<script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+
+
+</head>
+<body>
+<header>
+    <div class="custom-container header-container">
+        <div class="logo-block">
+            <a href="" class="header-logo-link"><img src="img/images/logo-color.png" alt="" class="header-logo-img"></a>
+            <a href="" class="header-logo-text">учебный центр</a>
         </div>
-        <div class="made-by">
-          <div class="made-by__name"> @Лизунов Александр</div>
-          <div class="made-by__text"> при обучении в LoftSchool | 2017</div>
+        <div class="contacts-block">
+            <p class="contacts-address">г. Запорожье ул. Рекордная 11</p>
+            <div class="contacts-phone">
+                <div class="contacts-img-cover">
+                    <img src="img/images/phone-img.png" alt="" class="contacts-img">
+                </div>
+                <a href="tel:+380930991099" class="contacts-phone-link">(093)-099-1-099</a>
+            </div>
         </div>
-      </div>
     </div>
-    <div class="preloader">
-      <div class="preloader__spinner">
-        <div class="preloader__animation"></div>
-        <div class="preloader__percents">0%</div>
-      </div>
+</header>
+<div class="main-section">
+    <div class="custom-container main-container">
+        <h2 class="main-title-small title-doted">
+            Курсы
+        </h2>
+        <h1 class="main-title">
+            тестиро<span>вщиков</span>
+        </h1>
+        <h2 class="main-title-small main-title-small_second">в Запорожье</h2>
+        <p class="main-comment">
+            Курс из 24 занятий реальной практики
+        </p>
+        <div class="main-button-cover">
+            <a href="" class="main-button">
+                Получить новую профессию всего за 4500 грн.
+            </a>
+        </div>
     </div>
-  </body>
-</html>
+</div>
+<div class="details-section">
+    <div class="custom-container details-container">
+        <div class="details-title-cover">
+            <p class="title-block-left">Для кого </p>
+            <p class="title-block-right">этот курс</p>
+        </div>
+        <img src="img/images/direction-image.png" alt="" class="direction-image">
+        <div class="direction-cover">
+            <div class="direction-item">
+                <p class="direction-item-title">
+                    Аудитория 1
+                </p>
+                <p class="direction-item-text">
+                    Люди стремящиеся изменить свою жизнь к лучшему.
+                    Желающие расстаться с прошлой низкооплачиваемой
+                    профессией, получив необходимые знания и навыки.
+                </p>
+            </div>
+            <div class="direction-item">
+                <p class="direction-item-title">
+                    Студенты
+                </p>
+                <p class="direction-item-text">
+                    Люди стремящиеся изменить свою жизнь к лучшему.
+                    Желающие расстаться с прошлой низкооплачиваемой
+                    профессией, получив необходимые знания и навыки
+                </p>
+            </div>
+            <div class="direction-item">
+                <p class="direction-item-title">
+                    Начинающие It спец
+                </p>
+                <p class="direction-item-text">
+                    Начинающие IT-специалисты которые желают расширить свои познания и
+                    приобрести актуальную
+                    специализацию, основанную на практических знаниях.
+                </p>
+            </div>
+        </div>
+        <div class="head-block">
+            <div class="head-content-cover">
+                <h3 class="head-title">
+                    Валерий Головко
+                </h3>
+                <p class="head-position">
+                    Руководитель проекта
+                </p>
+                <p class="head-text">
+                    В среднем зарплата начинающего тестировщика (Junior QA Engineer ) составляет от 300-500 $, С
+                    получением практического опыта зарплата постоянно растет и достигает 2000-3000 $. Несложно
+                    подсчитать что при ваших затратах, уже через 2 месяца вы можете получить высокооплачиваемую
+                    квалифицированную работу.
+                </p>
+            </div>
+
+
+            <img src="img/images/person.png" alt="" class="details-bg-bottom">
+        </div>
+    </div>
+
+
+    <img src="img/images/ver-blocks-bg.png" alt="" class="details-top-bg">
+</div>
+
+</body>
